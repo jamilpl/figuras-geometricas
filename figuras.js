@@ -71,3 +71,28 @@ function calcularAreaCuadrado() {
   const area = areaCuadrado(value);
   alert(area);
 }
+
+
+// Código para calcular el triángulo
+
+function calcularPerimetroTriangulo() {
+  const lado1 = document.getElementById("lado1");
+  const value1 = parseFloat(lado1.value);
+  const lado2 = document.getElementById("lado2");
+  const value2 = parseFloat(lado2.value);
+  const base = document.getElementById("base");
+  const value3 = parseFloat(base.value);
+
+  const perimetro = perimetroTriangulo(value1, value2, value3);
+  alert(`El perímetro del triángulo es: ${perimetro} cm`);
+}
+
+function calcularAreaTriangulo() {
+  const base = document.getElementById("base");
+  const value3 = parseFloat(base.value);
+  const altura = document.getElementById("altura");
+  const value4 = parseFloat(altura.value);
+
+  const area = areaTriangulo(value3, value4);
+  alert(`El área del triángulo es: ${area} cm^2`)
+}
