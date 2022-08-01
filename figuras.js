@@ -60,7 +60,8 @@ function calcularPerimetroCuadrado() {
   const value = input.value;
 
   const perimetro = perimetroCuadrado(value);
-  alert(`El perímetro del cuadrado es: ${perimetro}cm`);
+  document.getElementById("resultadoCuadrado").value = perimetro + "cm";
+  // alert(`El perímetro del cuadrado es: ${perimetro}cm`);
 };
 
 
@@ -69,7 +70,8 @@ function calcularAreaCuadrado() {
   const value = input.value;
 
   const area = areaCuadrado(value);
-  alert(`El área del cuadrado es: ${area}cm²`);
+  document.getElementById("resultadoCuadrado").value = area + "cm²";
+  // alert(`El área del cuadrado es: ${area}cm²`);
 };
 
 
@@ -86,7 +88,8 @@ function calcularPerimetroTriangulo() {
   const value3T = parseFloat(baseT.value);
 
   const perimetroT = perimetroTriangulo(value1T, value2T, value3T);
-  alert(`El perímetro del triángulo es: ${perimetroT}cm`);
+  document.getElementById("resultadoTriangulo").value = perimetroT + "cm";
+  // alert(`El perímetro del triángulo es: ${perimetroT}cm`);
 };
 
 function calcularAreaTriangulo() {
@@ -97,7 +100,8 @@ function calcularAreaTriangulo() {
   const value4T = parseFloat(alturaT.value);
 
   const areaT = areaTriangulo(value3T, value4T);
-  alert(`El área del triángulo es: ${areaT}cm²`)
+  document.getElementById("resultadoTriangulo").value = areaT + "cm²";
+  // alert(`El área del triángulo es: ${areaT}cm²`)
 };
 
 
@@ -105,18 +109,22 @@ function calcularAreaTriangulo() {
 
 function calcularPerimetroCirculo() {
   const radioCirculo = document.getElementById("radioCirculo");
-  const valueCir = radioCirculo.value;
+  const valueCir = parseFloat(radioCirculo.value);
+
   const perimetroCir = perimetroCirculo(valueCir);
 
-  alert(`El Perímetro del círculo es: ${perimetroCir}cm`);
+  document.getElementById("resultadoCirculo").value = perimetroCir + "cm";
+  // alert(`El Perímetro del círculo es: ${perimetroCir}cm`);
 };
 
 function calcularAreaCirculo() {
   const radioCirculo = document.getElementById("radioCirculo");
-  const valueCir = radioCirculo.value;
+  const valueCir = parseFloat(radioCirculo.value);
+
   const areaCir = areaCirculo(valueCir);
 
-  alert(`El Área del círculo es: ${areaCir}cm²`);
+  document.getElementById("resultadoCirculo").value = areaCir + "cm²";
+  // alert(`El Área del círculo es: ${areaCir}cm²`);
 };
 
 
@@ -146,6 +154,7 @@ function calcularTrianguloIso() {
 
     const grandeAltura = pequenoLado1;
 
-    alert(`La altura del triángulo es: ${grandeAltura}cm`);
+    document.getElementById("resultadoTrianguloIsosceles").value = grandeAltura + "cm";
+    // alert(`La altura del triángulo es: ${grandeAltura}cm`);
   };
 };
