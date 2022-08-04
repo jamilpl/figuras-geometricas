@@ -4,11 +4,11 @@ console.group("Cuadrados");
 
 function perimetroCuadrado(lado) {
   return lado * 4;
-};
+}
 
 function areaCuadrado(lado) {
   return lado * lado;
-};
+}
 
 console.groupEnd();
 
@@ -19,11 +19,11 @@ console.group("Triángulos");
 
 function perimetroTriangulo(lado1, lado2, base){
   return lado1 + lado2 + base;
-};
+}
 
 function areaTriangulo(base, altura) {
   return (base * altura) / 2;
-};
+}
 
 console.groupEnd();
 
@@ -34,18 +34,18 @@ console.group("Círculos");
 
 function diametroCirculo(radio) {
   return radio * 2;
-};
+}
 
 const PI = Math.PI;
 
 function perimetroCirculo(radio) {
   const diametro = diametroCirculo(radio);
   return diametro * PI;
-};
+}
 
 function areaCirculo(radio) {
   return (radio * radio) * PI;
-};
+}
 
 console.groupEnd();
 
@@ -62,7 +62,7 @@ function calcularPerimetroCuadrado() {
   const perimetro = perimetroCuadrado(value);
   document.getElementById("resultadoCuadrado").value = perimetro + "cm";
   // alert(`El perímetro del cuadrado es: ${perimetro}cm`);
-};
+}
 
 
 function calcularAreaCuadrado() {
@@ -72,7 +72,7 @@ function calcularAreaCuadrado() {
   const area = areaCuadrado(value);
   document.getElementById("resultadoCuadrado").value = area + "cm²";
   // alert(`El área del cuadrado es: ${area}cm²`);
-};
+}
 
 
 // Código para calcular el triángulo
@@ -90,7 +90,7 @@ function calcularPerimetroTriangulo() {
   const perimetroT = perimetroTriangulo(value1T, value2T, value3T);
   document.getElementById("resultadoTriangulo").value = perimetroT + "cm";
   // alert(`El perímetro del triángulo es: ${perimetroT}cm`);
-};
+}
 
 function calcularAreaTriangulo() {
   const baseT = document.getElementById("baseT");
@@ -102,7 +102,7 @@ function calcularAreaTriangulo() {
   const areaT = areaTriangulo(value3T, value4T);
   document.getElementById("resultadoTriangulo").value = areaT + "cm²";
   // alert(`El área del triángulo es: ${areaT}cm²`)
-};
+}
 
 
 // Código para calcular el círculo
@@ -115,7 +115,7 @@ function calcularPerimetroCirculo() {
 
   document.getElementById("resultadoCirculo").value = perimetroCir + "cm";
   // alert(`El Perímetro del círculo es: ${perimetroCir}cm`);
-};
+}
 
 function calcularAreaCirculo() {
   const radioCirculo = document.getElementById("radioCirculo");
@@ -125,7 +125,7 @@ function calcularAreaCirculo() {
 
   document.getElementById("resultadoCirculo").value = areaCir + "cm²";
   // alert(`El Área del círculo es: ${areaCir}cm²`);
-};
+}
 
 
 // Código para calcular la altura de un triángulo isósceles
@@ -156,5 +156,5 @@ function calcularTrianguloIso() {
 
     document.getElementById("resultadoTrianguloIsosceles").value = grandeAltura + "cm";
     // alert(`La altura del triángulo es: ${grandeAltura}cm`);
-  };
-};
+  }
+}

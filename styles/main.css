@@ -6,7 +6,7 @@
 
 html {
   font-size: 62.5%;
-  background-color: rebeccapurple;
+  background-color: #202A3F;
 }
 
 header {
@@ -16,7 +16,7 @@ header {
   text-align: center;
   font-size: 1.7rem;
   color: white;
-  background-color: cadetblue;
+  background-color: #06060A;
 }
 
 header h1{
@@ -41,14 +41,14 @@ main {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  background-color: #ffffffa1;
+  background-color: #CBC8E8;
   border-radius: 15px;
 }
 
 .figuras-geometricas h2 {
   text-align: center;
   font-size: 2.5rem;
-  color: black;
+  color: #06060A ;
   margin-bottom: 20px;
 }
 
@@ -65,39 +65,46 @@ main {
 
 .figuras-geometricas form label {
   font-size: 1.7rem;
+  color: #06060A;
 }
 
 .figuras-geometricas form input {
   height: 30px;
-  padding-left: 4px;
+  padding-left: 7px;
   margin: 10px 0;
-  border: 1px solid black;
+  border: 1px solid #202A3F;
   border-radius: 4px;
   outline: none;
 }
 
 .figuras-geometricas form input:focus {
-  border: 2px solid rebeccapurple;;
+  border: 2px solid #202A3F;;
 }
 
 .figuras-geometricas form input:last-child {
   height: 50px;
-  font-size: 1.5rem;
+  font-size: 1.6rem;
 }
 
 .figuras-geometricas form button {
-  height: 35px;
-  width: 150px;
+  width: 170px;
+  height: 40px;
   margin: 5px 5px;
   border: none;
   border-radius: 5px;
-  background-color: #663399c9;
+  background-color: #202A3F;
+  font-size: 1.6rem;
   color: white;
   cursor: pointer;
 }
 
 .isotriangulo-container form button {
   height: 40px;
+}
+
+.figuras-geometricas form button:hover {
+  background-color: #202a3fee;
+  color: rgba(255, 255, 255, 0.856);
 }
 
 @media (max-width: 520px) {
